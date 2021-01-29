@@ -2,15 +2,15 @@
 
 Hello there!
 
-If you're reading this, it means you're now at the challenge step of the engineering hiring process WOOT WOOT. We're really happy that you made it here and super appreciative of your time! And by the way don't spend too much time on it!
+If you're reading this, it means you're now at the coding exercise step of the engineering hiring process WOOT WOOT. We're really happy that you made it here and super appreciative of your time!
 
-Rather than a pass/fail challenge, this will help us understand how to best fit you into the team. You'll definitely hear back from the team once you send it to us.
+In this exercise you're asked to implement some features in an existing React app, using whatever extra tools you want.
 
 If you have any questions, don't hesitate to create an issue in this repo or reach out directly to marcelo@remote.com.
 
-## About the challenge
-
-In this challenge, you're asked to implement some features in an existing React app, using whatever extra tools you want.
+## Expectations  
+* It should be production-ready code - the code will show us how you ship things to production and be a mirror of your craft.  
+* Take whatever time you need - we won't look at start/end dates, you have a life besides this and we respect that!  
 
 ### 🚀 What are you building
 
