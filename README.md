@@ -6,7 +6,7 @@ If you're reading this, it means you're now at the coding exercise step of the e
 
 In this exercise you're asked to implement some features in an existing React app, using whatever extra tools you want.
 
-If you have any questions, don't hesitate to create an issue in this repo or reach out directly to marcelo@remote.com.
+If you have any questions, don't hesitate to reach out directly to marcelo@remote.com.
 
 ## Expectations  
 * It should be production-ready code - the code will show us how you ship things to production and be a mirror of your craft.  
