@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
 import { Field, Label, Hint } from '../FieldParts';
-import { Select } from './styles';
+import { Select } from './SelectField.styled';
 
 export default function SelectField({ children, label, helper, errorMsg, ...props }) {
   const invalidAttr = errorMsg ? { 'aria-invalid': true } : {};
@@ -15,12 +14,3 @@ export default function SelectField({ children, label, helper, errorMsg, ...prop
     </Field>
   );
 }
-
-SelectField.propTypes = {
-  /** Field label */
-  label: PropTypes.string.isRequired,
-  /** Field description message */
-  helper: PropTypes.string,
-  /** Field error message */
-  errorMsg: PropTypes.string,
-};

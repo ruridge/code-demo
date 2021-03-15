@@ -1,16 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-import Button from "components/Button";
-import LoadingLogo from "components/LoadingLogo";
-import Text, { TextLight } from "components/Text";
-import { Card, CardHeader, CardBody, CardFooter } from "components/Card";
-import { Table, TableThCell, TableCell, TableRow } from "components/Table";
-import TextField from "components/Form/TextField";
-import SelectField from "components/Form/SelectField";
+import Button from 'components/Button';
+import LoadingLogo from 'components/LoadingLogo';
+import Text, { TextLight } from 'components/Text';
+import { Card, CardHeader, CardBody, CardFooter } from 'components/Card';
+import { Table, TableThCell, TableCell, TableRow } from 'components/Table';
+import TextField from 'components/Form/TextField';
+import SelectField from 'components/Form/SelectField';
 
-import { ReactComponent as IconSearch } from "theme/icons/search.svg";
-import { ReactComponent as IconUser } from "theme/icons/user.svg";
-import { ReactComponent as IconTimesCircle } from "theme/icons/times-circle.svg";
+import { ReactComponent as IconSearch } from 'theme/icons/search.svg';
+import { ReactComponent as IconUser } from 'theme/icons/user.svg';
+import { ReactComponent as IconTimesCircle } from 'theme/icons/times-circle.svg';
 
 const Container = styled.main`
   margin: 40px auto;
@@ -20,7 +21,7 @@ const Container = styled.main`
 
 const TitleComponent = styled.h2`
   font-size: 1.2rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   margin: 24px 0 0;
   padding-top: 24px;
@@ -32,16 +33,17 @@ const Demo = styled.main`
 `;
 
 export default function Playground() {
-  // 💡 At the end, you can leave this file unused, it's okay! :)
   return (
     <Container>
       <Text size="h1" as="h1">
         Playground
       </Text>
+
       <TextLight as="p">
-        These are some of the base components already built for you. You can{" "}
+        These are some of the base components already built for you. You can{' '}
         <Text size="bodyBold">use and modify</Text> them as you need!
       </TextLight>
+      <Link to="/">Go Home</Link>
 
       <TitleComponent>{`<Text>`}</TitleComponent>
       <Demo>
@@ -100,11 +102,7 @@ export default function Playground() {
 
       <TitleComponent>{`<TextField>`}</TitleComponent>
       <Demo>
-        <TextField
-          label="Name"
-          placeholder="e.g. Kim Fog"
-          helper="First and last name"
-        />
+        <TextField label="Name" placeholder="e.g. Kim Fog" helper="First and last name" />
 
         <TextField
           label="E-mail"

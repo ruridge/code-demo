@@ -2,9 +2,9 @@ import { render, screen } from '@testing-library/react';
 import App from './App';
 
 describe('App', () => {
-  it('renders playground', () => {
+  it('renders', () => {
     render(<App />);
-    const title = screen.getByRole('heading', { level: 1, name: 'Playground' });
+    const title = screen.getByText('People page coming...');
     expect(title).toBeInTheDocument();
   });
 });

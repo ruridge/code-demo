@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
 import { Field, Label, Hint } from '../FieldParts';
-import { Input } from './styles';
+import { Input } from './TextField.styled';
 
 export default function TextField({ label, helper, errorMsg, ...props }) {
   const invalidAttr = errorMsg ? { 'aria-invalid': true } : {};
@@ -16,15 +15,4 @@ export default function TextField({ label, helper, errorMsg, ...props }) {
 
 TextField.defaultProps = {
   type: 'text',
-};
-
-TextField.propTypes = {
-  /** Field type */
-  type: PropTypes.string,
-  /** Field label */
-  label: PropTypes.string.isRequired,
-  /** Field description message */
-  helper: PropTypes.string,
-  /** Field error message */
-  errorMsg: PropTypes.string,
 };

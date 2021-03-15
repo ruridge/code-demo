@@ -8,46 +8,59 @@ In this exercise you're asked to implement some features in an existing React ap
 
 If you have any questions, don't hesitate to reach out directly to marcelo@remote.com.
 
-## Expectations  
-* It should be production-ready code - the code will show us how you ship things to production and be a mirror of your craft.  
-* Take whatever time you need - we won't look at start/end dates, you have a life besides this and we respect that!  
+## Expectations
 
-### 🚀 What are you building
+- It should be production-ready code - the code will show us how you ship things to production and be a mirror of your craft.
+- Take whatever time you need - we won't look at start/end dates, you have a life besides this and we respect that!
 
-This is a basic CRUD (without the delete) of people. You'll implement an app with 3 pages:
+## About the challenge
 
-- **People list** - Display a list of people and their attributes. It allows searching by employee name.
-- **Create member** - A form to create a new team member;
-- **Edit team member** - A form to edit an existing team member;
+This challenge is divided into 2 parts:
 
-For further details, follow the design specs in the Figma file shared with you by e-mail.
+1. **🚀 Feature implementation** in an existing React project (this one).
+2. **👀 Code Review** another feature in the same project.
 
-### 👀 What we will look at
+### 🚀 1. Feature implementation
+
+This is a basic CRUD (without the delete) of people. You'll implement the "People list" page:
+
+- Display a table with a list people and their attributes.
+- Searching by name.
+- Filterting by employment type.
+- Links to the pages to add or edit a team member. You do NOT need to implement those pages.
+
+You can use whatever extra tools you need to accomplish this.
+
+For further notes, follow the design specs in the Figma file shared with you by e-mail.
+
+#### What we will look at
 
 - How you work with HTML, CSS, and JavaScript in a React app;
 - How you reproduce the provided design;
 - How you structure your codebase and how well it reads;
 - How well it works;
-- How you write tests. Tests take time, so you just need to test:
-  - Button component: Some tests are already done, you will need to complete them.
-  - People list page: Write the needed tests.
-  - Edit or Create member: Pick one of the flows. You are free to choose between Testing Library, Cypress or any other testing tool/approach.
+- How you write tests.
 
-### ⛔️ What you can't use
+#### What you can't use
 
 - A CSS library like Bootstrap, etc. - we're interested in how you structure your CSS code to achieve something.
 
-### ⏱ How long should it take
-
-- As little as possible, there's no time-frame or deadline for this but we want to be respectful of your time.
-
-## ✅ When you're done
+#### When you're done
 
 - Complete the "Implementation Details" section at the bottom of this README.
 - Open a Pull Request in this repo and send the link to marcelo@remote.com.
 - You can also send some feedback about this exercise. Was it too short/big? Boring? Let us know!
 
----
+### 👀 2. Code Review
+
+There's an open Pull Request called "Add/Edit a team member".
+
+This PR implements the feature to add or edit a team member. Your goal is:
+
+- Ensure the feature is working as expected
+- Point out any improvements you believe that must, should or could be done
+
+Note: It's totally okay if the tools or approaches used in this PR don't match the ones you picked on the part 1 of this exercise. The goal here is to discuss different strategies to solve a problem.
 
 ---
 
@@ -96,7 +109,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-[JSON server](https://github.com/typicode/json-server) will run concurrently in watch mode on port 4000 - [http://localhost:4000](http://localhost:4000).
+[JSON server](https://github.com/typicode/json-server) will run concurrently in watch mode on port 4002 - [http://localhost:4002](http://localhost:4002).
 
 ### `npm test`
 
@@ -110,11 +123,13 @@ This script runs automatically after `npm install`.
 
 ## Available endpoints
 
-- `GET http://localhost:4000/people`: get the full list of people
-- `GET http://localhost:4000/people/{id}`: get the person with id `{id}`
-- `GET http://localhost:4000/people?name_like={substring}`: search for people where the name includes `{substring}`
-- `POST http://localhost:4000/people`: create a new person
-- `PATCH http://localhost:4000/people/{id}`: update the person with id `{id}`
+- `GET http://localhost:4002/people`: get the full list of people
+- `GET http://localhost:4002/people?name_like={substring}`: search for people where the name includes `{substring}`
+- `GET http://localhost:4002/people?employment={string}`: search for people where the employment type matches `string`
+- `GET http://localhost:4002/people?name_like={substring}&employment={string}`: search for people by name and employment type
+- `GET http://localhost:4002/people/{id}`: get the person with id `{id}`
+- `POST http://localhost:4002/people`: create a new person
+- `PATCH http://localhost:4002/people/{id}`: update the person with id `{id}`
 
 ## Implementation details
 

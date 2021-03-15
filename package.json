@@ -9,6 +9,7 @@
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
     "styled-normalize": "^8.0.7",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "seed-db": "node src/server/initJsonDb",
-    "server": "json-server --watch --port 4000 --delay 1500 src/server/db.json",
+    "server": "json-server --watch --port 4002 --delay 1500 src/server/db.json",
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -26,7 +27,9 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier",
+      "prettier/react"
     ]
   },
   "browserslist": {
@@ -43,6 +46,8 @@
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "prop-types": "^15.7.2"
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
   }
 }

@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
-
-import { ButtonStyled } from './styles';
+import { ButtonStyled } from './Button.styled';
 
 export default function Button({ children, ...props }) {
   return (
@@ -9,8 +7,3 @@ export default function Button({ children, ...props }) {
     </ButtonStyled>
   );
 }
-
-Button.propTypes = {
-  /** Button text content */
-  children: PropTypes.node,
-};

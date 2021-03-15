@@ -1,6 +1,6 @@
 import Text, { TextLight } from 'components/Text';
 
-import { Wrapper, Inner, ProfileLink, ProfileAvatar, ProfileInfo } from './styles';
+import { Wrapper, Inner, ProfileLink, ProfileAvatar, ProfileInfo } from './Header.styled';
 
 export default function Header() {
   const userFake = { name: 'Julie Howard', role: 'Admin', picUrl: null };
