@@ -53,14 +53,16 @@ For further notes, follow the design specs in the Figma file shared with you by 
 
 ### 👀 2. Code Review
 
-There's an open Pull Request called "Add/Edit a team member".
+There's an open Pull Request called "Add/Edit a team member" (`to-review` branch).
 
-This PR implements the feature to add or edit a team member. Your goal is:
+This PR implements the "Add Team Member" and the "Edit Team Member" pages. Imagine that this was done by one of your teammates, who is an intern, and you were tasked with reviewing its code.
 
-- Ensure the feature is working as expected
-- Point out any improvements you believe that must, should or could be done
+Your goal is to:
+- Check if the feature is working as expected
+- Point out code smells, poor practices or bugs
+- Give suggestions on how to approach them differently
 
-Note: It's totally okay if the tools or approaches used in this PR don't match the ones you picked on the part 1 of this exercise. The goal here is to discuss different strategies to solve a problem.
+Note: don’t take the choices on tools/approaches used in this PR as guidance when doing the part 1 of the exercise. It’s likely, and totally okay, if the tools/approaches are different.
 
 ---
 
