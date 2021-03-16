@@ -55,7 +55,7 @@ For further notes, follow the design specs in the Figma file shared with you by 
 
 There's an open Pull Request called "Add/Edit a team member" (`to-review` branch).
 
-This PR implements the "Add Team Member" and the "Edit Team Member" pages. Imagine that this was done by one of your teammates, who is an intern, and you were tasked with reviewing its code.
+This PR implements the "Add Team Member" and the "Edit Team Member" pages. Imagine that this was done by one of your teammates, who is an intern, and you were tasked with reviewing their code.
 
 Your goal is to:
 - Check if the feature is working as expected

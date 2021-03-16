@@ -15,6 +15,10 @@
     "styled-normalize": "^8.0.7",
     "web-vitals": "^0.2.4"
   },
+  "engines": {
+    "node": ">=15.10.x",
+    "npm": "7.x"
+  },
   "scripts": {
     "seed-db": "node src/server/initJsonDb",
     "server": "json-server --watch --port 4002 --delay 1500 src/server/db.json",
