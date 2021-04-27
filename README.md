@@ -29,7 +29,7 @@ This is a basic CRUD (without the delete) of people. You'll implement the "Peopl
 - Filterting by employment type.
 - Links to the pages to add or edit a team member. You do NOT need to implement those pages.
 
-You can use whatever extra tools you need to accomplish this.
+You can use any extra tools you need to accomplish this. We want to respect your time and there's no need to reinvent the wheel.
 
 For further notes, follow the design specs in the Figma file shared with you by e-mail.
 
