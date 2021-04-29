@@ -24,9 +24,9 @@ This challenge is divided into 2 parts:
 
 This is a basic CRUD (without the delete) of people. You'll implement the "People list" page:
 
-- Display a table with a list people and their attributes.
+- Display a table with a list of people and their attributes.
 - Searching by name.
-- Filterting by employment type.
+- Filtering by employment type.
 - Links to the pages to add or edit a team member. You do NOT need to implement those pages.
 
 You can use any extra tools you need to accomplish this. We want to respect your time and there's no need to reinvent the wheel.
