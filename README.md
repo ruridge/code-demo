@@ -31,7 +31,7 @@ This is a basic CRUD (without the delete) of people. You'll implement the "Peopl
 
 You can use any extra tools you need to accomplish this. We want to respect your time and there's no need to reinvent the wheel.
 
-For further notes, follow the design specs in the Figma file shared with you by e-mail.
+Please, follow the design specs in the Figma file shared with you by e-mail. This Figma file contains "sticky notes" with more requirements about the page mechanisms.
 
 #### What we will look at
 
