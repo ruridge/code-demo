@@ -6,7 +6,7 @@ If you're reading this, it means you're now at the coding exercise step of the e
 
 In this exercise you're asked to implement some features in an existing React app, using whatever extra tools you want.
 
-If you have any questions, don't hesitate to reach out directly to paulo@remote.com.
+If you have any questions, don't hesitate to reach out directly to code_exercise@remote.com.
 
 ## Expectations
 
@@ -48,7 +48,7 @@ Please, follow the design specs in the Figma file shared with you by e-mail. Thi
 #### When you're done
 
 - Complete the "Implementation Details" section at the bottom of this README.
-- Open a Pull Request in this repo and send the link to paulo@remote.com.
+- Open a Pull Request in this repo and send the link to code_exercise@remote.com.
 - You can also send some feedback about this exercise. Was it too short/big? Boring? Let us know!
 
 ### 👀 2. Code Review
