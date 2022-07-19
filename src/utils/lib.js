@@ -8,7 +8,7 @@ const countries = {
   'United Kingdom': { name: 'United Kingdom', locale: 'en-GB' },
 };
 
-export function formatCurrency(country, currency, number) {
+function formatCurrency(country, currency, number) {
   const formatter = new Intl.NumberFormat(countries[country].locale, {
     style: 'currency',
     currency: currency,
@@ -21,3 +21,5 @@ export function formatCurrency(country, currency, number) {
 
   return sortedPartValuse.join('').trim();
 }
+
+export { formatCurrency };

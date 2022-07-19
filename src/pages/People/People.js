@@ -5,6 +5,7 @@ import { useQuery, useQueryClient } from 'react-query';
 // utils
 import { client } from 'utils/api-client';
 import { formatCurrency } from 'utils/lib';
+import { useEmployment } from 'utils/hooks';
 // components
 import { Container } from 'components/Layout';
 import Text, { TextLight } from 'components/Text';
@@ -16,26 +17,6 @@ import ToggleButton from 'components/ToggleButton';
 import LoadingLogo from 'components/LoadingLogo';
 // theme
 import { ReactComponent as IconUser } from 'theme/icons/user.svg';
-
-function useEmployment() {
-  const [isContractor, setIsContractor] = React.useState(false);
-  const [isEmployee, setIsEmployee] = React.useState(false);
-  function setEmployment(employmentType) {
-    if (employmentType === 'contractor') {
-      setIsContractor((prevState) => !prevState);
-    }
-    if (employmentType === 'employee') {
-      setIsEmployee((prevState) => !prevState);
-    }
-    return new Error('Unknown employment type');
-  }
-  return {
-    setEmployment,
-    isContractor,
-    isEmployee,
-    employment: isContractor === isEmployee ? 'both' : isContractor ? 'contractor' : 'employee',
-  };
-}
 
 const StyledTableThCell = styled(TableThCell)`
   width: 200px;
