@@ -1,9 +1,8 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
-import { useQuery, useQueryClient } from 'react-query';
 // utils
-import { client } from 'utils/api-client';
+import { usePeopleQuery } from 'utils/api-client';
 import { formatCurrency } from 'utils/lib';
 import { useEmployment } from 'utils/hooks';
 // components
@@ -23,40 +22,10 @@ const StyledTableThCell = styled(TableThCell)`
 `;
 
 export default function People() {
-  const queryClient = useQueryClient();
   const [query, setQuery] = React.useState('');
   const { setEmployment, isContractor, isEmployee, employment } = useEmployment();
 
-  const url = new URL('/people', 'http://fake-base.com');
-  if (query) {
-    url.searchParams.append('name_like', query);
-  }
-  if (employment !== 'both') {
-    url.searchParams.append('employment', employment);
-  }
-
-  const { data, isLoading, isSuccess, isError, error } = useQuery({
-    queryKey: [
-      'search',
-      {
-        query,
-        employment,
-      },
-    ],
-    queryFn: () => client(url.pathname + url.search).then((data) => data),
-    placeholderData: () => {
-      return queryClient
-        .getQueryData(['search', { employment: 'both', query: '' }])
-        ?.filter((data) => {
-          return (
-            data.name.toLowerCase().includes(query.toLowerCase()) &&
-            (employment === 'both' ||
-              (isContractor && data.employment === 'contractor') ||
-              (isEmployee && data.employment === 'employee'))
-          );
-        });
-    },
-  });
+  const { data, isLoading, isSuccess, isError, error } = usePeopleQuery(employment, query);
 
   return (
     <Container>
