@@ -6,7 +6,7 @@ const fontFaces = css`
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('./Inter-Regular.woff2') format('woff2');
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
   }
 
   @font-face {
@@ -14,7 +14,7 @@ const fontFaces = css`
     font-style: normal;
     font-weight: 500;
     font-display: swap;
-    src: url('./Inter-Medium.woff2') format('woff2');
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
   }
 
   @font-face {
@@ -22,7 +22,7 @@ const fontFaces = css`
     font-style: normal;
     font-weight: 600;
     font-display: swap;
-    src: url('./Inter-SemiBold.woff2') format('woff2');
+    src: url('/fonts/Inter-SemiBold.woff2') format('woff2');
   }
 
   @font-face {
@@ -30,7 +30,7 @@ const fontFaces = css`
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url('./Inter-Bold.woff2') format('woff2');
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
   }
 `;
 

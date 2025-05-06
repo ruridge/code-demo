@@ -26,6 +26,10 @@ const typography = {
   bodySmall: getTextStyles(400, '14px', 1.29),
   bodySmallBold: getTextStyles(600, '14px', 1.29),
   bodyCaption: getTextStyles(400, '13px', 1.23),
+
+  tableHead: getTextStyles(600, '11px', 1.21),
+  tableBody: getTextStyles(400, '14px', 1.57),
+  tableBold: getTextStyles(500, '14px', 1.21),
 };
 
 export default typography;
